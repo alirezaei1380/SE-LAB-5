@@ -18,14 +18,14 @@ Feature: Calculator
       | 2     | 2      | 4	    |
 
   Scenario: find root of division on two numbers with function f
-    Given Two input values, 16 and 4
+    Given Two input numbers, 16 and 4
     When I f the two values
-    Then I expect the result 2
+    Then I expect the result to be 2
 
-  Scenario Outline: add two numbers
-    Given Two input values, <a> and <b>
+  Scenario Outline: f two numbers
+    Given Two input numbers, <a> and <b>
     When I f the two values
-    Then I expect the result <result>
+    Then I expect the result to be <result>
 
     Examples:
       | a | b | result |
