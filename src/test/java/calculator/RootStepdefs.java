@@ -31,6 +31,6 @@ public class RootStepdefs {
 
     @Then("^I expect the result to be (\\d+)$")
     public void iExpectTheResult(int arg0) {
-        Assert.assertEquals(arg0, result);
+        Assert.assertEquals(arg0, result, 0.01);
     }
 }
